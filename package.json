@@ -1,0 +1,19 @@
+{
+  "name": "@runtheons/response-factory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zexal0807/runtheons-response-factory.git"
+  },
+  "author": "Zexal0807",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zexal0807/runtheons-response-factory/issues"
+  },
+  "homepage": "https://github.com/Zexal0807/runtheons-response-factory#readme"
+}

@@ -1,0 +1,1 @@
+module.exports = (res) => new require("./ResponseFactory")(res);
