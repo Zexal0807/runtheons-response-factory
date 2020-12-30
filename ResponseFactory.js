@@ -2,7 +2,7 @@ module.exports = class ResponseFactory {
 
     res = null;
 
-    constructor(res) {
+    setResponse(res) {
         this.res = res;
     }
 

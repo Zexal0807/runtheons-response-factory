@@ -1,1 +1,1 @@
-module.exports = (res) => new require("./ResponseFactory")(res);
+module.exports = new require("./ResponseFactory")();
