@@ -15,9 +15,9 @@ module.exports = class ResponseFactory {
 	}
 
 	getOption(req) {
-		var header = req.header || {};
+		var headers = req.headers || {};
 		return {
-			type: header['Content-Type'] ? header['Content-Type'] : 'application/json'
+			type: headers['Content-Type'] ? headers['Content-Type'] : 'application/json'
 		};
 	}
 }
