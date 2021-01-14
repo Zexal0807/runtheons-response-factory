@@ -10,8 +10,9 @@ module.exports = new class ResponseFactory {
 		if (this.res == null || this.res == undefined)
 			throw Error('Response not set');
 
+		this.res.status(200);
 		this.res.set('Content-Type', option.type);
-		this.res.sendStatus(200).send(data);
+		this.res.send(data);
 	}
 
 	getOption(req) {
