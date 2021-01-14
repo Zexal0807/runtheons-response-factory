@@ -1,4 +1,4 @@
-module.exports = class ResponseFactory {
+module.exports = new class ResponseFactory {
 
 	res = null;
 
