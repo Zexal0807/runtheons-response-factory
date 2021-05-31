@@ -15,11 +15,14 @@ module.exports = new class ResponseFactory {
 
 		this.res.status(200);
 
-		if (option.type == this.FILE) {
-			this.res.sendFile(data.data);
-		} else {
-			this.res.set('Content-Type', option.type);
-			this.res.send(data);
+		switch (option.type) {
+			case this.FILE:
+				this.res.sendFile(data.data);
+				break;
+			default:
+				this.res.set('Content-Type', option.type);
+				this.res.send(data);
+				break;
 		}
 	}
 
@@ -27,7 +30,8 @@ module.exports = new class ResponseFactory {
 		var headers = req.headers || {};
 		return {
 			headers: req.headers,
-			type: headers['Content-Type'] ? headers['Content-Type'] : this.JSON
+			type: headers['Content-Type'] ? headers['Content-Type'] : this.JSON,
+			req: req
 		};
 	}
 }
