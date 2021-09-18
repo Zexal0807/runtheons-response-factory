@@ -21,7 +21,7 @@ module.exports = new(class ResponseFactory {
 				this.res.sendFile(data.data);
 				break;
 			case this.REDIRECT:
-				this.res.redirect(data);
+				this.res.redirect(data.data);
 				break;
 			case this.JSON:
 			default:
